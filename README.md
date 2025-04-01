@@ -1,3 +1,5 @@
+![image info](/images/MV.png)
+
 # ComfyUI-IG2MV
 
 This custom node package provides nodes specifically for using the `mvadapter_ig2mv_sdxl.safetensors` adapter within ComfyUI. This adapter is designed for image-guided multi-view generation, typically used for creating textures from 3D mesh renders (position and normal maps).
