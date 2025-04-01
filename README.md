@@ -1,4 +1,4 @@
-![image info](../../images/mv.png)
+![image info](/images/mv.png)
 
 # ComfyUI-IG2MV
 
