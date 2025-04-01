@@ -4,17 +4,17 @@ This custom node package provides nodes specifically for using the `mvadapter_ig
 
 ## Nodes
 
-*   **Diffusers IG MV Model Makeup:** Prepares the diffusion pipeline by loading the specific `mvadapter_ig2mv_sdxl.safetensors` adapter and initializing it with the required attention processor.
+*   **Diffusers IG MV Model Makeup:** Prepares the diffusion pipeline by loading the specific `mvadapter_ig2mv_sdxl.safetensors` adapter and initializing it with the required attention processor. This node will automatically download the adapter file from the specified Hugging Face repository path (e.g., `huanngzh/mv-adapter`) if it's not already present in your diffusers cache.
 *   **Diffusers IG MV Sampler:** Performs the sampling process using the prepared pipeline, taking position maps and normal maps as control inputs.
 
 ## Dependencies
 
 This node package **requires** the following other custom nodes to be installed and working correctly:
 
-1.  [**ComfyUI-MVAdapter:**](https://github.com/huanngzh/ComfyUI-MVAdapter) Provides the core pipeline loading nodes (`Diffusers Pipeline Loader`, `Diffusers Vae Loader`, `Diffusers Scheduler Loader`, `Lora Model Loader` etc.) and the underlying MV-Adapter pipeline implementation that this node relies on. (Please ensure you have the main ComfyUI-MVAdapter installed).
-2.  [**ComfyUI-Hunyuan3DWrapper:**](https://github.com/kijai/ComfyUI-Hunyuan3DWrapper) Required for generating the **Position Map** and **Normal Map** image batches that serve as input to the `Diffusers IG MV Sampler` node. (Please ensure you have this installed).
+1.  **ComfyUI-MVAdapter:** Provides the core pipeline loading nodes (`Diffusers Pipeline Loader`, `Diffusers Vae Loader`, `Diffusers Scheduler Loader`, `Lora Model Loader` etc.) and the underlying MV-Adapter pipeline implementation that this node relies on. (Please ensure you have the main ComfyUI-MVAdapter installed).
+2.  **ComfyUI-Hunyuan3DWrapper:** Required for generating the **Position Map** and **Normal Map** image batches that serve as input to the `Diffusers IG MV Sampler` node. (Please ensure you have this installed).
 
-*(Note: You will need to find and install these dependencies separately if you haven't already.)*
+*(Note: You will need to find and install these dependencies separately if you haven't already. The necessary Python packages like `diffusers` and `einops` should be covered by installing the requirements for `ComfyUI-MVAdapter`.)*
 
 ## Important Limitation: 6 Views Only
 
