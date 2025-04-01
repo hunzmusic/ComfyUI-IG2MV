@@ -11,7 +11,7 @@ This custom node package provides nodes specifically for using the `mvadapter_ig
 
 This node package **requires** the following other custom nodes to be installed and working correctly:
 
-1.  **ComfyUI-MVAdapter:** Provides the core pipeline loading nodes (`Diffusers Pipeline Loader`, `Diffusers Vae Loader`, `Diffusers Scheduler Loader`, `Lora Model Loader` etc.) and the underlying MV-Adapter pipeline implementation that this node relies on. (Please ensure you have the main ComfyUI-MVAdapter installed).
+1.  **ComfyUI-MVAdapter:** Provides the core pipeline loading nodes (`Diffusers Pipeline Loader`, `Diffusers Vae Loader`, `Diffusers Scheduler Loader`, `Lora Model Loader` etc.) and the underlying MV-Adapter pipeline implementation that this node relies on. (Please ensure you have the main ComfyUI-MVAdapter installed). [Link text Here](https://link-url-here.org)
 2.  **ComfyUI-Hunyuan3DWrapper:** Required for generating the **Position Map** and **Normal Map** image batches that serve as input to the `Diffusers IG MV Sampler` node. (Please ensure you have this installed).
 
 *(Note: You will need to find and install these dependencies separately if you haven't already.)*
