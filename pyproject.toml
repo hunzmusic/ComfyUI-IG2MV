@@ -1,0 +1,14 @@
+[project]
+name = "ig2mv"
+description = "This custom node package provides nodes specifically for using the mvadapter_ig2mv_sdxl.safetensors adapter within ComfyUI. This adapter is designed for image-guided multi-view generation, typically used for creating textures from 3D mesh renders (position and normal maps)."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/hunzmusic/ComfyUI-IG2MV"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-IG2MV"
+Icon = ""
