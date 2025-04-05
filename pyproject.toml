@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI-IG2MV"
+description = ""
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/hunzmusic/ComfyUI-IG2MV"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "hunzmusic"
+DisplayName = "ComfyUI-IG2MV"
+Icon = ""
